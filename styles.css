@@ -57,20 +57,11 @@ h2 {
     align-items: center;
 }
 
-<<<<<<< HEAD
-.header-img{
-    display: flex;
-    width: 100%;
-    max-width: 1000px;
-    margin-inline: auto;
-    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.2));
-=======
 .flower_head {
     height: 7rem;
     width: 7rem;
     background: #cba8ed;
     border-radius: 100%;
->>>>>>> bbe703c (Mother's Day)
 }
 
 .flower_stem {
@@ -91,15 +82,10 @@ h2 {
     border-radius: 2em 0 2em 0em;
 }
 
-<<<<<<< HEAD
-.image-1{
-    width: 250px;
-=======
 .yellow {
     width: 7.5rem;
     height: 7.5rem;
     background: khaki;
->>>>>>> bbe703c (Mother's Day)
 }
 
 .pink {
@@ -123,13 +109,6 @@ h2 {
     animation: fadeOut 4s 0.25s ease forwards;
 }
 
-<<<<<<< HEAD
-.btn-no{
-    left: calc(50% + 1rem);
-    transition: all .5s ease;
-    z-index: 2;
-}
-=======
 .delay-1 {
     animation-delay: 3s;
 }
