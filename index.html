@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neal Aerospace | Novel Engineering for Alternative Lift</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Unified Header -->
+    <header class="hero">
+      <nav class="navbar">
+        <div class="container">
+          <div class="logo">
+            <h1>Neal Aerospace</h1>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="ostia.html">Ostia</a></li>
+            <li><a href="remus.html">Remus</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero-content container">
+        <h2>Exploring the Final Frontier</h2>
+        <p>Innovative engineering that defies gravity.</p>
+        <a href="#projects-tab" class="cta-btn">Discover Our Projects</a>
+      </div>
+    </header>
+
+    <!-- Projects Tab Section (Fade-in Animation) -->
+    <section id="projects-tab" class="projects-tab container">
+      <h2>Our Projects</h2>
+      <div class="tabs">
+        <div class="tab">
+          <a href="ostia.html">
+            <h3>Ostia</h3>
+            <p>Revolutionizing propulsion with cutting-edge design.</p>
+          </a>
+        </div>
+        <div class="tab">
+          <a href="remus.html">
+            <h3>Remus</h3>
+            <p>Innovative solutions for alternative lift systems.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section (Centered) -->
+    <section class="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>
+          Neal Aerospace is a student organization dedicated to pushing the
+          boundaries of engineering and innovation. Our projects explore
+          alternative propulsion and lift systems to revolutionize aerospace
+          technology.
+        </p>
+      </div>
+    </section>
+
+    <!-- Call-to-Action Section (Centered) -->
+    <section class="call-to-action">
+      <div class="container">
+        <h2>Stay Connected</h2>
+        <p>
+          Join our mission and be a part of the aerospace revolution. Get
+          involved as a member, volunteer, or sponsor.
+        </p>
+        <a href="contact.html" class="cta-btn">Contact Us</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Neal Aerospace. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Intersection Observer for fade-in animation on projects -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+
+        const projectsTab = document.querySelector(".projects-tab");
+        if (projectsTab) {
+          observer.observe(projectsTab);
+        }
+      });
+    </script>
+  </body>
+</html>
